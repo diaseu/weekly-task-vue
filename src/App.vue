@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Header @toggle-add-task="toggleAddTask" title="Daily Task App" 
+    <Header @toggle-add-task="toggleAddTask" title="Weekly Task App" 
       :showAddTask="showAddTask"
     />
     <div v-show="showAddTask">
