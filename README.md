@@ -1,19 +1,10 @@
-# vue
+# Weekly Task App - Made in Vue.js
 
-## Project setup
+## About Project
 ```
-npm install
+<img src="https://i.imgur.com/KymuqtA.png" alt="Screenshot of Application">
+Weekly Task App was made to learn the basics of Vue.js - front-end focus.
+The first iteration was to create a functional app without any sort of backend.
+The second iteration hooked up the application to a JSON server.
+The next Vue project will be to create a full-stack application with Vue and MySQL. 
 ```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
