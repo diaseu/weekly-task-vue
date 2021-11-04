@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style scoped>
-  .fas {
+.fas {
   color: red;
 }
 .task {
@@ -33,6 +33,7 @@ export default {
   margin: 5px;
   padding: 10px 20px;
   cursor: pointer;
+  border-radius: 20px 0px;
 }
 .task.reminder {
   border-left: 5px solid green;

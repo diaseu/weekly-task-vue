@@ -7,7 +7,9 @@
     
     <!-- <h2>Task Tracker</h2> -->
     <!-- <img alt="Vue logo" src="../assets/logo.png" style="max-width: 50px;"> -->
-    <Button @btn-click="$emit('toggle-add-task')" :text="showAddTask ? 'Close' : 'Add Task'" :color="showAddTask ? 'red' : 'green'" />
+    <Button @btn-click="$emit('toggle-add-task')" :text="showAddTask ? '-' : '+'" 
+    
+    />
   </header>
 </template>
 
@@ -69,5 +71,9 @@ export default {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    color: #fff;
+  }
+  h3 {
+    font-weight: 400;
   }
 </style>

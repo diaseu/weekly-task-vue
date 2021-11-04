@@ -6,7 +6,9 @@
     <div v-show="showAddTask">
       <AddTask @add-task="addTask" />
     </div>
-    <Tasks @toggle-reminder="toggleReminder" @delete-task="deleteTask" :tasks="tasks" />
+    <div class="taskbox">
+      <Tasks @toggle-reminder="toggleReminder" @delete-task="deleteTask" :tasks="tasks" />
+    </div>
   </div>
   <!-- <HelloWorld msg="Daily Task App"/> -->
 </template>
@@ -93,17 +95,29 @@ export default {
   margin: 0;
   padding: 0;
 }
+html {
+  height: 100%;
+}
 body {
   font-family: 'Poppins', sans-serif;
+  width: 100%;
+  margin: 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  /* background: linear-gradient(180deg, #000D2F, #07277C); */
+  background-image: -webkit-linear-gradient(120deg, #777 50%, #222 50%);
 }
 .container {
   max-width: 500px;
-  margin: 30px auto;
   overflow: auto;
   min-height: 300px;
+  margin: 30px auto;
+}
+.taskbox {
+  background-color: rgba(255,255,255,0.85);
+  border-radius: 25px;
   border: 1px solid steelblue;
   padding: 30px;
-  border-radius: 5px;
 }
 .btn {
   display: inline-block;
@@ -112,11 +126,12 @@ body {
   border: none;
   padding: 10px 20px;
   margin: 5px;
-  border-radius: 5px;
+  border-radius: 50%;
   cursor: pointer;
   text-decoration: none;
   font-size: 15px;
   font-family: inherit;
+  height: 50px;
 }
 .btn:focus {
   outline: none;
