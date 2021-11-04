@@ -3,7 +3,10 @@
 ## About Project
 ```
 Weekly Task App was made to learn the basics of Vue.js - front-end focus.
-The first iteration was to create a functional app to add tasks with title, date and reminder toggle. App displays current week dates along with Application is currently not hooked up to a backend, but future iteration will have it hooked up to a JSON server.
+The first iteration was to create a basic task functionality app:
+to add tasks with title, date and reminder toggle. 
+App displays current week dates along with Application is currently not hooked up to a backend;
+future iteration will have it hooked up to a JSON server.
 
 Major technologies used: Vue.js, Date-FNS
 
