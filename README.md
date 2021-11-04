@@ -21,5 +21,7 @@ Screenshot of application on 1080p laptop
 
 ## Upcoming Features
 ```
-The second iteration of this project will be hooked up to a JSON server, to allow for dynamic data manipulation. Mobile responsiveness may be implemented at this time.
+The second iteration of this project will be hooked up to a JSON server, 
+to allow for dynamic data manipulation. 
+Mobile responsiveness may be implemented in the future as well.
 ```
