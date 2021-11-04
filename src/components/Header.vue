@@ -13,6 +13,7 @@
 
 <script>
 import Button from './Button'
+import { format, startOfWeek, endOfWeek}  from 'date-fns'
 
 export default {
   name: 'Header',
@@ -34,13 +35,19 @@ export default {
     },
     weekDate() {
       const today = new Date();
-      const start = today.getDate() - today.getDay();
-      // const startday = new Date(today.setDate(start)).toLocaleDateString("en-US");
-      const startday = new Date(today.setDate(start));
-      const end = start+6
-      const endday = new Date(today.setDate(end)+1);
-      const test = endday.toLocaleDateString("en-US", { month: 'short' })
-      const week = startday.toLocaleDateString("en-US", { month: 'short' }) + " " + startday.toLocaleDateString("en-US", { day: 'numeric' }) + ", " + startday.toLocaleDateString("en-US", { year: 'numeric' }) + " to " + endday.toLocaleDateString("en-US", { month: 'short' }) + " " + endday.toLocaleDateString("en-US", { day: 'numeric' }) + ", " + endday.toLocaleDateString("en-US", { year: 'numeric' })
+      const currentday = format(today, 'MM/dd/yyyy')
+      const start = format(startOfWeek(today), 'MMM dd')
+      const end = format(endOfWeek(today), 'MMM dd, yy')
+      const week = start + ' to ' + end
+      // Date.protype.FirstDay = function() {
+      //   return(new Date(this.setDate(this.getDate() - this.getDay()+ (this.getDay() == 0 ? -6:1) )))
+      // }
+      // Date.prototype.LastDay = function() {
+      //   new Date(this.setDate(this.getDate() - this.getDay() +7))
+      // }
+      // const start = today.FirstDay;
+      // const end = today.LastDay;
+      // const week = start + ' to ' + end;
       return week;
     },
     testDate: function() {
