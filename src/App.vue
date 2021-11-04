@@ -104,8 +104,13 @@ body {
   margin: 0;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  /* background: linear-gradient(180deg, #000D2F, #07277C); */
-  background-image: -webkit-linear-gradient(120deg, #777 50%, #222 50%);
+  background-color: #010827;
+  /* background: linear-gradient(180deg, #0C0944, #200B6B, #AA6288); */
+  /* background: linear-gradient(180deg, green, #FCE8E4, #AA6288); */
+  /* background-image: -webkit-linear-gradient(120deg, #777 50%, #222 50%); */
+}
+#app {
+  margin: 0 4vh;
 }
 .container {
   max-width: 500px;
@@ -114,10 +119,10 @@ body {
   margin: 30px auto;
 }
 .taskbox {
-  background-color: rgba(255,255,255,0.85);
+  background-color: #02123C;
   border-radius: 25px;
-  border: 1px solid steelblue;
-  padding: 30px;
+  /* border: 1px solid steelblue; */
+  padding: 6vh;
 }
 .btn {
   display: inline-block;

@@ -26,17 +26,17 @@ export default {
 
 <style scoped>
 .fas {
-  color: red;
+  color: #F587C1;
 }
 .task {
   background: #f4f4f4;
   margin: 5px;
   padding: 10px 20px;
   cursor: pointer;
-  border-radius: 20px 0px;
+  border-radius: 15px;
 }
 .task.reminder {
-  border-left: 5px solid green;
+  border-left: 5px solid #F587C1;
 }
 .task h3 {
   display: flex;

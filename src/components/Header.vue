@@ -73,7 +73,11 @@ export default {
     margin-bottom: 20px;
     color: #fff;
   }
+  h1 {
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  }
   h3 {
-    font-weight: 400;
+    font-weight: 300;
   }
 </style>
